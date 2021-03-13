@@ -2,7 +2,7 @@ defmodule HelloNervesHub.MixProject do
   use Mix.Project
 
   @app :hello_nerves_hub
-  @version "0.1.0"
+  @version "0.1.1"
   @all_targets [:bbb]
 
   def project do
