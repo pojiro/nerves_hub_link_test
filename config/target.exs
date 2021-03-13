@@ -94,7 +94,6 @@ config :mdns_lite,
 config :nerves, :firmware, provisioning: :nerves_hub_link
 
 config :nerves_hub_link,
-  remote_iex: true,
   # COMPILE TIME OPTIONs
   # If you change below options, you MUST recompile :nerves_hub_link
   fwup_public_keys: [:devkey],

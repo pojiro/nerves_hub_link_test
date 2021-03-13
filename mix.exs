@@ -2,7 +2,7 @@ defmodule HelloNervesHub.MixProject do
   use Mix.Project
 
   @app :hello_nerves_hub
-  @version "0.1.1"
+  @version "0.1.0"
   @all_targets [:bbb]
 
   def project do
@@ -40,7 +40,7 @@ defmodule HelloNervesHub.MixProject do
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.11.3", targets: @all_targets},
       {:nerves_pack, "~> 0.4.0", targets: @all_targets},
-      {:nerves_hub_link, "~> 0.1", targets: @all_targets},
+      {:nerves_hub_link, "== 0.9.3", targets: @all_targets},
 
       # Dependencies for specific targets
       {:nerves_system_bbb, "~> 2.8", runtime: false, targets: :bbb}
